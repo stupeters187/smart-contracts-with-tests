@@ -1,0 +1,95 @@
+{
+  "contract_name": "Escrow",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "seller",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "buyer",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "fund",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": true,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "paymentAmount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "arbiter",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_buyer",
+          "type": "address"
+        },
+        {
+          "name": "_arbiter",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b60405160408061024583398101604052808051919060200180519150505b60018054600160a060020a03338116600160a060020a0319928316179092556000805485841690831617905560028054928416929091169190911790555b50505b6101c88061007d6000396000f300606060405263ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166308551a5381146100695780637150d8ae14610098578063b60d4288146100c7578063c35905c6146100e3578063fe25e00a14610108575b600080fd5b341561007457600080fd5b61007c610137565b604051600160a060020a03909116815260200160405180910390f35b34156100a357600080fd5b61007c610146565b604051600160a060020a03909116815260200160405180910390f35b6100cf610155565b604051901515815260200160405180910390f35b34156100ee57600080fd5b6100f6610187565b60405190815260200160405180910390f35b341561011357600080fd5b61007c61018d565b604051600160a060020a03909116815260200160405180910390f35b600154600160a060020a031681565b600054600160a060020a031681565b6000805433600160a060020a039081169116148015610175575060035434145b151561018057600080fd5b5060015b90565b60035481565b600254600160a060020a0316815600a165627a7a723058208bc058c4233aa0371bfb51c786620437d604d6da86dbc985b0dfda0b278237470029",
+  "networks": {
+    "1514918398877": {
+      "events": {},
+      "links": {},
+      "address": "0xd6ee41a5f6044432a4c8f2a3d911cbaa659204a4",
+      "updated_at": 1515000863498
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1515001900670
+}
