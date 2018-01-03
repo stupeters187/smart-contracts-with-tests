@@ -1,6 +1,7 @@
 var HelloWorld = artifacts.require("./HelloWorld.sol");
 
 contract('HelloWorld', function(accounts){
+
   it("message should not be an empty string", function(){
     var myHelloWorldInstance;
     var _message;
