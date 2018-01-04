@@ -12,7 +12,7 @@ contract('Escrow', function(accounts){
     });
   });
 
-  it("should be able to accept ether in the correct payment amount", function(){
+  it("should be able to accept ether in the correct payment amount, and only from the buyer", function(){
     var myEscrowInstance;
     return Escrow.deployed().then(function(instance){
       myEscrowInstance = instance;
