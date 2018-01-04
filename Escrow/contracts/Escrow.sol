@@ -20,4 +20,10 @@ contract Escrow {
             msg.value  == paymentAmount);
     return true;
   }
+
+  function sendToSeller() returns (bool){
+    require(msg.sender == buyer || msg.sender == arbiter);
+    seller.transfer(this.balance);
+    return true;
+  }
 }
