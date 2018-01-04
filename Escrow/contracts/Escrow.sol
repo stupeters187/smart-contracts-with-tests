@@ -8,10 +8,11 @@ contract Escrow {
 
   uint public paymentAmount;
 
-  function Escrow(address _buyer, address _arbiter) public {
+  function Escrow(address _buyer, address _arbiter, uint _paymentAmount) public {
     seller = msg.sender;
     buyer = _buyer;
     arbiter = _arbiter;
+    paymentAmount = _paymentAmount;
   }
 
   function fund() public payable returns (bool){
