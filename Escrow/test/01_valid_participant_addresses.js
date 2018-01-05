@@ -1,6 +1,6 @@
 var Escrow = artifacts.require("./Escrow.sol");
 
-contract('Escrow', function(accounts){
+contract('Escrow - state variables', function(accounts){
 
   it("should have a buyer address that is valid", () => {
     return Escrow.deployed().then(instance => {

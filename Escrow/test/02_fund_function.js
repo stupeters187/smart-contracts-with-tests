@@ -1,6 +1,6 @@
 var Escrow = artifacts.require("./Escrow.sol");
 
-contract('Escrow', accounts => {
+contract('Escrow - fund function', accounts => {
 
   it("should have a payment amount greater than 0", () => {
     return Escrow.deployed().then(instance => {
